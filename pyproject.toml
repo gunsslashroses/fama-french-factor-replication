@@ -1,0 +1,24 @@
+[project]
+name = "fama-french-factor-replication"
+version = "0.1.0"
+description = "Replication of Fama-French SMB and HML factors from raw WRDS data"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "scipy>=1.10",
+    "statsmodels>=0.14",
+    "wrds>=3.1",
+    "pandas-datareader>=0.10",
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

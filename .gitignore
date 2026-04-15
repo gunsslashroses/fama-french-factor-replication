@@ -1,1 +1,36 @@
-404: Not Found
+# Data files (large, user-specific)
+data/*.parquet
+data/*.csv
+data/*.pkl
+data/*.h5
+!data/README.md
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.*
+
+# Environment
+.env
+.venv/
+venv/
+*.pgpass
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build_notebook.py
